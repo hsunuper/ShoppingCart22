@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="huangyang.com.bawey.shoppingcart.activity.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/sel_1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/sel_textcolor"
+            android:text="月光茶人" />
+
+        <RadioButton
+            android:id="@+id/radio02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/sel_textcolor"
+            android:text="优惠" />
+
+        <RadioButton
+            android:id="@+id/radio03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/sel_textcolor"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/radio04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_4"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@drawable/sel_textcolor"
+            android:text="我的" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg" />
+
+</RelativeLayout>
